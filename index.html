@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .second{
+            background-color:black;
+            color:red;
+            text-align:left;
+        }
+        #init{
+            background-color:green;
+            color:yellow;
+            text-align:right;
+        }
+
+    </style>
 </head>
 
+
 <body>
-    <h1>Hello World</h1>
+    <!-- <h1>Hello World</h1>
     <h2>Hello World</h2>
     <h3>Hello World</h3>
     <h4>Hello World</h4>
@@ -54,8 +69,22 @@
     <p style="background-color: lightyellow;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
         iusto. Esse sed reiciendis sapiente?
         Inventore libero nemo expedita suscipit pariatur quia eligendi repellendus amet, corporis porro. Impedit culpa
-        quaerat voluptate.</p>
+        quaerat voluptate.</p> -->
 
+
+        <!-- internal css -->
+        <div class="first" style="background-color: aqua; color: red; text-align: center;">Hello World</div> 
+
+        <div class="second">Hello World</div>
+        <div id="init">Hello World</div>
+        <span id="init">Hello World</span>
+        <!-- span = only id not class -->
+        <!-- for class use . and for id use # in css
+
+        for class and id we can use internal css and external css 
+        but for inline css we can only use in class not in id -->
+      
+        
 </body>
 
 </html>
