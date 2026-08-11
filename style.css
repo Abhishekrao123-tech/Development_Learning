@@ -1,0 +1,10 @@
+    .second{
+            background-color:black;
+            color:red;
+            text-align:left;
+        }
+        #init{
+            background-color:green;
+            color:yellow;
+            text-align:right;
+        }
