@@ -8,3 +8,19 @@
             color:yellow;
             text-align:right;
         }
+
+        table,th,td{
+            border:1px solid black;
+            /* border-collapse:collapse; */
+            
+          
+        }
+        th,td{
+            padding:10px;
+            text-align:left;
+            background-color:rgb(206, 36, 36);
+        }
+        table{
+            border-spacing:5px;
+            border-inline-color: rgb(206, 36, 36);
+        }
