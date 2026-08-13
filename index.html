@@ -75,9 +75,9 @@
     <!-- internal css -->
     <div class="first" style="background-color: aqua; color: red; text-align: center;">Hello World</div>
 
-    <div class="second">Hello World</div>
+    <!-- <div class="second">Hello World</div>
     <div id="init">Hello World</div>
-    <span id="init">Hello World</span>
+    <span id="init">Hello World</span> -->
     <!-- span = only id not class -->
     <!-- for class use . and for id use # in css
 
@@ -120,7 +120,7 @@
 
     <!-- Forms -->
 
-    <form>
+    <!-- <form>
         <label for="name">name</label>
         <input type="text" id="name" name="name">
         <label for="password">password</label>
@@ -130,11 +130,24 @@
 enter phone number
         <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required><br>
       <button>submit</button>
-    </form>
+    </form> -->
 
 
-
-
+    <canvas id="mycanvas" width="700" height="600" style="border:5px solid #000000;">
+        Your browser does not support the HTML canvas tag.</canvas>
+    <canvas id="mycanvas1" width="700" height="600" style="border:5px solid #d00303;">
+        Your browser does not support the HTML canvas tag.</canvas>
+<script>
+    
+    var c = document.getElementById("mycanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "red";
+    ctx.fillRect(0, 0, 700, 600);
+    var c = document.getElementById("mycanvas1");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, 700, 600);
+</script>
 </body>
 
 </html>
