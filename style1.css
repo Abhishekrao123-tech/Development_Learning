@@ -1,0 +1,21 @@
+/* .first{
+    background: yellow;
+    font-style: italic;
+} */
+/* class=.  ,id=#  */
+
+
+
+/* universal selector applicable to all the html elements */
+*{  
+    background-color: aqua;
+}
+
+h2,p,h1{
+    color: red;
+}
+
+#first{
+    background: yellow;
+    font-style: italic;
+}
