@@ -34,3 +34,15 @@ h2,p,h1{
     font-size: 20px;
     /* text-align: center */
 }
+
+p{
+    /* display:inline; */
+    /* display: block; */
+    /* display: inline-block; */
+    /* display: none; */
+    float: right;
+    /* float:initial;
+    float:inherit; both are default values of float property*/ 
+
+
+}
