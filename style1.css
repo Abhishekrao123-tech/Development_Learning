@@ -48,12 +48,42 @@ p{
 }
  */
 
-p{
+/* p{
     background-color:rgb(231, 65, 65);
     width:200px;
     height:100px;
     border: 2px solid black;
-    overflow:auto; /* default value of overflow property */
-    /* there are 4 values of overflow property visible,hidden,scroll,auto */
-    opacity:0.9; /* default value of opacity property is 1 */
-} 
+    overflow:auto; default value of overflow property
+    there are 4 values of overflow property visible,hidden,scroll,auto
+    opacity:0.9; default value of opacity property is 1
+}  */
+
+.flex-container{
+    display:flex;
+    background-color:dimgray;
+    /* flex-direction:column-reverse; default value of flex-direction property is row */
+    /* flex-wrap:wrap; default value of flex-wrap property is nowrap */
+    /* flex-wrap:wrap-reverse;
+    wrap=> the flex items will be in multiple lines */
+
+    /* flex-flow:row nowrap; default value of flex-flow property is row nowrap */
+    /* justify-content:space-around; default value of justify-content property is flex-start */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+
+
+}
+.flex-container > div{
+    background-color: tomato;
+    width:100px;
+    height:100px;
+    padding:20px;
+    margin:10px;
+    font-size:30px;
+    text-align:center;
+    line-height:100px; middle of the div
+
+}
