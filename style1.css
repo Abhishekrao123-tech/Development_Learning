@@ -55,4 +55,5 @@ p{
     border: 2px solid black;
     overflow:auto; /* default value of overflow property */
     /* there are 4 values of overflow property visible,hidden,scroll,auto */
+    opacity:0.9; /* default value of opacity property is 1 */
 } 
