@@ -22,7 +22,7 @@ h2,p,h1{
     font-style: italic;
 } */
 
- .border{
+ /* .border{
     border-top-left-radius: 250px;
     border-bottom-left-radius: 250px;
     border-top-right-radius: 250px;
@@ -43,7 +43,7 @@ p{
     float: right;
     float:initial;
     /* float:inherit; both are default values of float property 
- */
+ 
 
 }
  
@@ -53,9 +53,9 @@ p{
     width:200px;
     height:100px;
     border: 2px solid black;
-    /* overflow:auto; default value of overflow property
+    overflow:auto; default value of overflow property
     there are 4 values of overflow property visible,hidden,scroll,auto
-    opacity:0.9; default value of opacity property is 1 */
+    opacity:0.9; default value of opacity property is 1 
 }  
 
 .flex-container{
@@ -71,7 +71,7 @@ p{
     wrap=> the flex items will be in multiple lines 
 
      flex-flow:row nowrap; default value of flex-flow property is row nowrap 
-     justify-content:space-around; default value of justify-content property is flex-start  */
+     justify-content:space-around; default value of justify-content property is flex-start  
      justify-content: start; 
      justify-content: end; 
      justify-content: space-between; 
@@ -90,7 +90,7 @@ p{
     margin:10px;
     font-size:30px;
     text-align:center;
-    /* line-height:100px; middle of the div */
+    /* line-height:100px; middle of the div 
 
 }
 
@@ -98,4 +98,43 @@ img{
     width:200px;
     height:300px;
     object-fit: scale-down;
+} */
+
+p.test1{
+    width:150px;
+    border:1px solid black;
+    word-break:keep-all;
+    writing-mode: horizontal-tb;
+    
+    /* white-space: nowrap;
+    width:200px;
+  
+    border:2px solid black;
+    overflow:hidden;
+    text-overflow:clip; */
 }
+
+p.test1:hover{
+    overflow: visible;
+}
+
+
+p.test2{
+     width:150px;
+    border:1px solid black;
+    /* word-break: break-all; */
+    writing-mode: vertical-rl;
+
+
+    /* white-space: nowrap;
+    width:200px;
+  height: 70px;
+    border:2px solid black;
+    overflow:hidden;
+    text-overflow: ellipsis; */
+}
+/* p.test2:hover{
+    overflow:visible; 
+    overflow:scroll;
+
+} */
