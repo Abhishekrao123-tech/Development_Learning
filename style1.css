@@ -140,7 +140,7 @@ p.test2{
 } */
 
 
-div{
+p.div{
     width:200px;
     height:200px;
     background-color: aqua;
@@ -195,3 +195,27 @@ body{
 }
     }
     
+
+
+
+*{
+    box-sizing: border-box;
+
+}    
+
+.header{
+    border: 2px solid red;
+    padding:15px;
+}
+.menu{
+    width:25%;
+    border:2px solid red;
+    padding:15px;
+    float: left;
+}
+.main{
+    width:75%;
+    float:left;
+    padding:15px;
+    border:2px solid red;
+}
