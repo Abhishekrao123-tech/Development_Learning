@@ -138,3 +138,60 @@ p.test2{
     overflow:scroll;
 
 } */
+
+
+div{
+    width:200px;
+    height:200px;
+    background-color: aqua;
+    animation-name: abhi;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    position:relative;
+    animation-delay:2s;
+}
+
+@keyframes abhi {
+    0%{
+        background-color: aqua;
+        left:0px;
+        top:0px;
+    }
+    25%{
+        background-color:blue;
+        left:500px;
+        top:0px;
+    }
+    50%{
+        background-color: yellow;
+        left:500px;
+        top:500px;
+    }
+    75%{
+        background-color: green;
+        left:0px;
+        top:500px;
+    }
+    
+    100%{
+        background-color:black;
+        left:0px;
+        top:0px;
+    }
+  
+}
+
+body{
+    background-color: brown;
+}
+@media only screen and (max-width:1000px){
+    body{
+        background-color: aqua;
+}
+    }
+@media only screen and (max-height:200px){
+    body{
+        background-color: aqua;
+}
+    }
+    
