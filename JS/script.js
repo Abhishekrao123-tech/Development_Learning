@@ -61,3 +61,22 @@ for (let i = 0; i < 5; i++) {
 //   n += i;
 //   console.log(n);
 // }
+
+function greet() {
+  console.log("hello World!!!!!!");
+}
+
+let disPi = function () {
+  console.log("Pi is approximately 3.14159");
+};
+
+greet();
+disPi();
+
+let x = myFunction(4, 2);
+document.getElementById("demo").innerHTML = x;
+function myFunction(a, b) {
+  return a * b;
+}
+
+myFunction();
