@@ -62,21 +62,64 @@ for (let i = 0; i < 5; i++) {
 //   console.log(n);
 // }
 
-function greet() {
-  console.log("hello World!!!!!!");
-}
+// FUNCTIONS
+// function greet() {
+//   console.log("hello World!!!!!!");
+// }
 
-let disPi = function () {
-  console.log("Pi is approximately 3.14159");
+// let disPi = function () {
+//   console.log("Pi is approximately 3.14159");
+// };
+
+// greet();
+// disPi();
+
+// let x = myFunction(4, 2);
+// document.getElementById("demo").innerHTML = x;
+// function myFunction(a, b) {
+//   return a * b;
+// }
+
+// myFunction();
+
+// const smart = () => {
+//   console.log("I'm Smart");
+// };
+
+// smart();
+
+// const square = (x) => x * x;
+
+// console.log(square(5));
+
+// const sum = (a, b) => {
+//   console.log(a + b);
+// };
+
+// sum(100, 3);
+
+// const name = (Firstname, lastName) => ({ first: Firstname, last: lastName });
+
+// console.log(name("John", "Doe"));
+
+// APPLY()
+
+// var arr = [1, 2, 3, 4, 5];
+// let sum = Math.min.apply(null, arr);
+// document.write(sum);
+
+// var arr = [1, 2, 3, 4, 5];
+// var newarr = ["a", "b", "c"];
+// arr.push.apply(arr,newarr);
+// document.writeln(arr);
+
+var website = {
+  name: "w3schools",
+  getName: function () {
+    return this.name;
+  },
 };
 
-greet();
-disPi();
-
-let x = myFunction(4, 2);
-document.getElementById("demo").innerHTML = x;
-function myFunction(a, b) {
-  return a * b;
-}
-
-myFunction();
+var unBoundGetName = website.getName;
+var boundGetName = unBoundGetName.bind(website);
+document.writeln(boundGetName());
