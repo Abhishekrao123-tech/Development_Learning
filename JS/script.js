@@ -113,13 +113,49 @@ for (let i = 0; i < 5; i++) {
 // arr.push.apply(arr,newarr);
 // document.writeln(arr);
 
-var website = {
-  name: "w3schools",
-  getName: function () {
-    return this.name;
-  },
-};
+// var website = {
+//   name: "w3schools",
+//   getName: function () {
+//     return this.name;
+//   },
+// };
 
-var unBoundGetName = website.getName;
-var boundGetName = unBoundGetName.bind(website);
-document.writeln(boundGetName());
+// var unBoundGetName = website.getName;
+// var boundGetName = unBoundGetName.bind(website);
+// document.writeln(boundGetName());
+
+// function emp(id, name) {
+//   this.id = id;
+//   this.name = name;
+// }
+// function PermanentEmp(id, name) {
+//   emp.call(this, id, name);
+// }
+// document.writeln(new PermanentEmp(010, "Abhi-Abhi").name);
+
+// function add(x, y) {
+//   return x + y;
+// }
+// let res = add(10, 20).toString();
+// // console.log(add(10, 20).toString());
+// console.log(typeof res);
+// console.log(typeof add.toString());
+
+// Global Variables
+// let globalVar = "I am good to go for Global Variables";
+// function myFunction() {
+//   console.log(globalVar);
+// }
+
+// myFunction();
+
+
+// Local Variables
+// function myFunction() {
+//   let LocalVar = "I am good to go for Local Variables";
+
+//   console.log(LocalVar);
+// }
+
+// myFunction();
+//   console.log(LocalVar);
