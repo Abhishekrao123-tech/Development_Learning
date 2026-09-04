@@ -149,7 +149,6 @@ for (let i = 0; i < 5; i++) {
 
 // myFunction();
 
-
 // Local Variables
 // function myFunction() {
 //   let LocalVar = "I am good to go for Local Variables";
@@ -159,3 +158,12 @@ for (let i = 0; i < 5; i++) {
 
 // myFunction();
 //   console.log(LocalVar);
+
+// function myFunc() {
+//   if (true) {
+//     let blockVar = "Block Variable";
+//     console.log(blockVar);
+//   }
+// }
+
+// myFunc();
