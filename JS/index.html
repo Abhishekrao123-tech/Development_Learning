@@ -10,12 +10,63 @@
 
 
 </head>
-
-<body>
+<!-- ONLOAD EVENT: The onload event occurs when an object has been loaded.
+ The onload event is often used to check the visitor's browser type and
+  version, and load the proper version of the web page based on this information. 
+  The onload event can also be used to perform a particular action once an image or a page has been fully loaded.     -->
+<body onload="window.alert('Page Loaded Successfully Bro!!!')">
     <p id="demo"></p>
-    <script src="script.js">
-        document.getElementById("demo").innerHTML = 15 + 11;
+
+    <!-- 
+    <div id="box">
+        <h1>JavaScript Learning</h1>
+        <p>Welcome to see my Growth!</p>
+    </div> -->
+
+
+    <!-- EVENT EXAMPLES -->
+    <form>
+        <input type="button" onclick="clickEvent()" value="Click Me">
+    </form>
+
+    <script>
+
+        function clickEvent() {
+            document.write("This is a click event");
+        }
+        function mouseoverevent() {
+            alert("This is a mouseover event");
+
+        }
+        function mousedownevent() {
+            alert("This is a mousedown event");
+
+        }
+        function mousemoveevent() {
+            alert("This is a mousemove event");
+
+        }
+        function focusevent() {
+            document.getElementById("input1").style.background = "aqua";
+        }
+        function keydownevent() {
+            document.getElementById("input2");
+            alert("Pressed a key");
+        }
+        function keyupevent() {
+            document.getElementById("input3");
+            alert("Released a key");
+        }
+
+
     </script>
+    <!-- <p onmouseover="mouseoverevent()">Mouseover Me</p> hover and for up - click on it  -->
+    <p onmousedown="mousedownevent()">Mousedown Me</p>
+    <p onmousemove="mousemoveevent()">Mousemove Me</p>
+    <input type="text" id="input1" onfocus="focusevent()" placeholder="Focus Me">
+    <input type="text" id="input2" onkeydown="keydownevent()" placeholder="Keydown Me">
+    <input type="text" id="input3" onkeyup="keyupevent()" placeholder="Keyup Me">
 </body>
+
 
 </html>

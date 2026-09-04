@@ -167,3 +167,16 @@ for (let i = 0; i < 5; i++) {
 // }
 
 // myFunc();
+
+// Accessing HTML Elements
+// const headerElement = document.getElementById("header");
+// const paragraphs = document.getElementsByClassName("paragraph");
+// const images = document.getElementsByTagName("img");
+
+// .innerHTML and .outerHTML are two properties in JavaScript 
+// that allow you to access and manipulate the HTML content of an element in different ways.
+// let demo1 = document.getElementById("box").innerHTML;
+// let demo2 = document.getElementById("box").outerHTML;
+
+// console.log(demo1);
+// console.log(demo2);
