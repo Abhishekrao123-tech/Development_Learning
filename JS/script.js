@@ -1,3 +1,4 @@
+"use strict";
 let a = 10;
 let b = 20;
 
@@ -173,10 +174,68 @@ for (let i = 0; i < 5; i++) {
 // const paragraphs = document.getElementsByClassName("paragraph");
 // const images = document.getElementsByTagName("img");
 
-// .innerHTML and .outerHTML are two properties in JavaScript 
+// .innerHTML and .outerHTML are two properties in JavaScript
 // that allow you to access and manipulate the HTML content of an element in different ways.
 // let demo1 = document.getElementById("box").innerHTML;
 // let demo2 = document.getElementById("box").outerHTML;
 
 // console.log(demo1);
 // console.log(demo2);
+
+// this Keyword in JavaScript refers to the current object that the code is being written inside.
+// It can refer to different objects depending on the context in which it is used.
+// In a global context, this refers to the window object, while in a function context,
+//  it refers to the object that called the function. In an object method, this refers to the object itself.
+
+// var address = {
+//   company: "Google",
+//   city: "Gurmitkal",
+//   state: "Karnataka",
+//   fullAddress: function () {
+//     return this.company + " " + this.city + " " + this.state;
+//   },
+// };
+
+// var fetch = address.fullAddress();
+// console.log(fetch);
+
+// const x = 10;
+// const y = 5;
+// const z = x + y;
+
+// console.log(x, y, z);
+// console.log(z);
+// debugger;
+
+// x = 55;
+// document.writeln(x);
+// var x;
+
+// document.writeln(sum(5, 10));
+// function sum(a,b){
+//   return a + b;
+// }
+
+// console.log(sum(10, 20));
+// function sum(a, a) {
+//   "use strict";
+//   return a + a;
+// }
+
+// x = 10;
+// console.log(x);
+// var x;
+// with Strict mode you can't use undeclared variables.
+//  In the above code, we are trying to assign a value to a variable x without declaring it first.
+//  This will throw an error in strict mode.
+
+// function clickEvent() {
+//   prompt("this is a Prompt Box", "You can write something here");
+// }
+
+// function clickEvent() {
+//   document.getElementById("01").removeAttribute("ftl");
+// }
+
+// document.write(document.getElementsByClassName("ftl")[0].innerHTML);
+console.log(typeof []);

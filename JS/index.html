@@ -14,7 +14,9 @@
  The onload event is often used to check the visitor's browser type and
   version, and load the proper version of the web page based on this information. 
   The onload event can also be used to perform a particular action once an image or a page has been fully loaded.     -->
-<body onload="window.alert('Page Loaded Successfully Bro!!!')">
+
+<body>
+    <!-- <body onload="window.alert('Page Loaded Successfully Bro!!!')"> -->
     <p id="demo"></p>
 
     <!-- 
@@ -25,11 +27,13 @@
 
 
     <!-- EVENT EXAMPLES -->
+    <p id="01" class="ftl">HII EVERYONE</p>
+    <p id="02" class="htl">HELLO EVERYONE</p>
     <form>
         <input type="button" onclick="clickEvent()" value="Click Me">
     </form>
 
-    <script>
+    <script src="script.js">
 
         function clickEvent() {
             document.write("This is a click event");
