@@ -207,6 +207,9 @@ for (let i = 0; i < 5; i++) {
 // console.log(z);
 // debugger;
 
+
+// Hoisting in JavaScript is a behavior in which variable and function declarations are 
+// moved to the top of their containing scope during the compilation phase.
 // x = 55;
 // document.writeln(x);
 // var x;
