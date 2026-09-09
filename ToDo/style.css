@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family-Roboto+Mono&subset=greek');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: aqua;
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.ta-wrapper{
+    background-color: rgb(85, 97, 97);
+    color: aliceblue;
+    padding:20px;
+    border: 4px;
+    box-shadow: 0 0 7px 7px rgb(0 0 0/20%);
+    min-height: 300px;
+}
+.heading h1{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+.input-wrapper{
+    margin-bottom: 20px;
+}
+.input-wrapper input{
+    outline:none;
+    border: 0;
+    background-color:rgb(211, 202, 202) ;
+    padding:10px;
+    color: white;
+    width: 500px;
+}
+.input-wrapper button{
+    border:0;
+    color:white;
+    padding:10px;
+    background-color: rgb(193, 86, 86);
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+.todo-item{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding:10px;
+
+}
+.todo-item input{
+    background-color:transparent ;
+    border:navajowhite;
+    color:white;
+    outline:none;
+
+}
+.todo-item i{
+    color:pink;
+    background-color:transparent ;
+    border: 1px solid ;
+    padding: 6px;
+    cursor: pointer;
+    transition:0.2s ease-in-out;
+    margin-left: 5px;
+}
+
+.todo-item button:hover{
+    
+    color:white;
+
+}
+.done{
+    text-decoration: line-through;
+}
+.fa-x{
+    padding:6px;
+}
+
+.todo.done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
