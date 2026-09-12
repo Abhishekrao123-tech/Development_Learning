@@ -78,9 +78,50 @@ let a, b, rest;
 // }
 // mainFunction(callbackFunction)
 
-setTimeout(myFunction, 3000);
-function myFunction() {
-  document.write("Hello India");
-}
+// setTimeout(myFunction, 3000);
+// function myFunction() {
+//   document.write("Hello India");
+// }
 
 // myFunction();
+
+//object
+var john = {
+  first_name: "john",
+  last_name: "Michelle",
+  online: true,
+};
+
+// let timerid = setTimeout(func|CommandEvent,[delay] , [arg1],[arg2],
+//   ...
+// )
+
+// function sayhi(phrase, who) { // whatever
+//   alert(phrase + " " + who);
+// }
+// setTimeout(sayhi, 2000, "hello", "welcome");
+
+// let timerid = setInterval(() =>
+// alert('hello'),2000);
+
+// setTimeout(() => {
+//   clearInterval(timerid); alert('stop');
+// }, 5000);
+
+function startCountdown(seconds) {
+  let counter = seconds;
+
+  let timerId = setInterval(() => {
+    console.log(`Time left: ${counter}`);
+    counter--;
+
+    // Stop condition
+    if (counter < 0) {
+      clearInterval(timerId); // Stops the interval
+      console.log("Countdown finished!");
+    }
+  }, 1000);
+}
+
+// Start a 5-second countdown
+startCountdown(5);
