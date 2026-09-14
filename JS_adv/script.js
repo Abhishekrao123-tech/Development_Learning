@@ -125,3 +125,13 @@ function startCountdown(seconds) {
 
 // Start a 5-second countdown
 startCountdown(5);
+
+async function fetchMoviesJSON(){
+  const response = await fetch('/movies');
+  const movies = await response.json();
+  return movies;
+}
+
+fetchMoviesJSON404().then(movies =>{
+  movies
+})
