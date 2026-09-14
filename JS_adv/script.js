@@ -108,30 +108,45 @@ var john = {
 //   clearInterval(timerid); alert('stop');
 // }, 5000);
 
-function startCountdown(seconds) {
-  let counter = seconds;
+// function startCountdown(seconds) {
+//   let counter = seconds;
 
-  let timerId = setInterval(() => {
-    console.log(`Time left: ${counter}`);
-    counter--;
+//   let timerId = setInterval(() => {
+//     console.log(`Time left: ${counter}`);
+//     counter--;
 
-    // Stop condition
-    if (counter < 0) {
-      clearInterval(timerId); // Stops the interval
-      console.log("Countdown finished!");
-    }
-  }, 1000);
-}
+//     // Stop condition
+//     if (counter < 0) {
+//       clearInterval(timerId); // Stops the interval
+//       console.log("Countdown finished!");
+//     }
+//   }, 1000);
+// }
 
-// Start a 5-second countdown
-startCountdown(5);
+// // Start a 5-second countdown
+// startCountdown(5);
 
-async function fetchMoviesJSON(){
-  const response = await fetch('/movies');
-  const movies = await response.json();
-  return movies;
-}
+// async function fetchMoviesJSON(){
+//   const response = await fetch('/movies');
+//   const movies = await response.json();
+//   return movies;
+// }
 
-fetchMoviesJSON404().then(movies =>{
-  movies
-})
+// fetchMoviesJSON404().then(movies =>{
+//   movies
+// })
+
+
+const controller = new AbortController();
+fetch(...a, { signal: controllrt.signal});
+controller.abort();
+
+// handling errors and timeouts with fetch
+
+// HTTP = hyper text transfer protocol 
+// client -sever protocol 
+// protocols: request + Response
+
+// Client      proxy     proxy     server    routers modems
+
+
