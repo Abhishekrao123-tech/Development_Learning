@@ -136,17 +136,32 @@ var john = {
 //   movies
 // })
 
-
-const controller = new AbortController();
-fetch(...a, { signal: controllrt.signal});
-controller.abort();
+// const controller = new AbortController();
+// fetch(...a, { signal: controllrt.signal});
+// controller.abort();
 
 // handling errors and timeouts with fetch
 
-// HTTP = hyper text transfer protocol 
-// client -sever protocol 
+// HTTP = hyper text transfer protocol == content(links,images,videos)
+// client -sever protocol
 // protocols: request + Response
 
 // Client      proxy     proxy     server    routers modems
 
+// web server gives document when asked by client
+// proxy web browser(google)  <-----> server
+// 1.cacheing
+// 2.filtering
+// 3.load balancing
+// 4.authentication
+// 5.logging
 
+// HTTP/2
+// HTTP is statless ,but not sessionless
+//           |
+//           controlled by transport layer
+
+// tcp -> udp -->caching,origin
+
+// console.log(0.1 + 0.2 === 0.3);
+// console.log([] ==! [])
