@@ -2,13 +2,13 @@
   "name": "development",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Abhishekrao123-tech/Development_Learning#readme",
-  "bugs": {
-    "url": "https://github.com/Abhishekrao123-tech/Development_Learning/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Abhishekrao123-tech/Development_Learning.git"
+  // "homepage": "https://github.com/Abhishekrao123-tech/Development_Learning#readme",
+  // "bugs": {
+  //   "url": "https://github.com/Abhishekrao123-tech/Development_Learning/issues"
+  // },
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git+https://github.com/Abhishekrao123-tech/Development_Learning.git"
   },
   "license": "ISC",
   "author": "",
