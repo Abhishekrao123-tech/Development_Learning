@@ -15,15 +15,28 @@
 
 
 
-const express = require("express");
-const app = express();
-const port = 3000;
+// const authMiddleware = async(req,res,next) => {
+//     try{
+//       ... do something
+//       next();
+//     }
+//     catch(err){
+//       next(err);
+//     }
+// }
+// const handler = (req,res) => {
+//   ... handle the request
+// }
+// application.use('path',authMiddleware,handler)
 
-app.get("/", (req, res,next) => {
-  res.send("hello World!!!!!!!!!!!!");
-  next();
-});
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
-});
+
+// const loggerMiddleware = function 
+//   const loggerMiddleware = (req,res,next) => {
+//     console.log('`[ ${new Date().toISOString()}]
+//       ${req.method } ${req.url}`');
+//       next();
+//   };
+//     }
+
+//     app.use(loggerMiddleware)
