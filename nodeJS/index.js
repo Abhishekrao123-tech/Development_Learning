@@ -120,7 +120,7 @@
 
 
 
-//DELETING A FILE
+// DELETING A FILE
 // const fs = require("fs");
 // console.log("Deleting a File");
 // fs.unlink("sample.txt",function(err){
