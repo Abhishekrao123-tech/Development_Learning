@@ -4,3 +4,86 @@
 upstream: sending the changes + merge to project
 downstream: info + downloading
 fork: make existing repo in github acc
+
+
+
+
+Here is a complete, organized reference of all essential **Git and GitHub commands**, grouped by workflow step with clear, concise descriptions.
+
+---
+
+### 1. Repository Setup & Config
+
+* **`git config --global user.name "Name"`** – Sets the global username for all commits on your machine.
+* **`git config --global user.email "email@example.com"`** – Sets the global email address tied to your commits.
+* **`git config --list`** – Displays all active Git configuration settings.
+* **`git init`** – Initializes a new, empty Git repository in the current folder.
+* **`git clone <url>`** – Downloads a complete copy of an existing remote repository from GitHub to your local machine.
+
+---
+
+### 2. Basic Workflow (Track & Commit)
+
+* **`git status`** – Shows the state of working directory files (untracked, modified, or staged).
+* **`git add <file>`** – Stages specific file changes to prepare them for the next commit.
+* **`git add .`** – Stages all modified, new, and deleted files in the current directory.
+* **`git commit -m "msg"`** – Saves staged changes into repository history with a descriptive log message.
+* **`git commit --amend`** – Modifies the most recent commit (updates message or adds newly staged files).
+* **`git log`** – Displays full commit history, including author, date, and commit IDs (hashes).
+* **`git log --oneline`** – Shows a condensed, single-line commit history for quick scanning.
+
+---
+
+### 3. Branching & Merging
+
+* **`git branch`** – Lists all local branches in the repository (active branch is marked with an asterisk).
+* **`git branch <branch-name>`** – Creates a new local branch without switching to it.
+* **`git switch <branch-name>`** (or `git checkout <branch>`) – Switches your working environment to an existing branch.
+* **`git checkout -b <branch-name>`** (or `git switch -c <branch>`) – Creates a new branch and immediately switches to it.
+* **`git merge <branch-name>`** – Integrates commits from the specified branch into your current active branch.
+* **`git branch -d <branch-name>`** – Deletes a local branch (fails if changes aren't fully merged).
+* **`git branch -D <branch-name>`** – Force-deletes a local branch regardless of unmerged changes.
+
+---
+
+### 4. Working with Remotes & GitHub
+
+* **`git remote -v`** – Lists all remote connection names and their URLs.
+* **`git remote add origin <url>`** – Links your local repository to a primary remote repo (usually named `origin`).
+* **`git remote add upstream <url>`** – Links local repo to the original parent project when working on a fork.
+
+
+* **`git push -u origin <branch>`** – Uploads local commits to GitHub and links local branch to the remote upstream branch.
+
+
+* **`git push`** – Uploads local commits on active branch to the linked remote repository.
+* **`git fetch`** – Downloads new data, branches, and tags from the remote repo without merging into working files.
+* **`git pull`** – Fetches changes from GitHub and automatically merges them into your current branch (equivalent to `git fetch` + `git merge`).
+* **`git pull upstream <branch>`** – Fetches and merges updates directly from the original source repo into your fork.
+
+
+
+---
+
+### 5. Stash, Reset & Undo Operations
+
+* **`git stash`** – Temporarily saves uncommitted changes to a clean slate without creating a commit.
+* **`git stash pop`** – Re-applies the most recently stashed changes and removes them from the stash list.
+* **`git stash list`** – Displays all stashed changes stored in the queue.
+* **`git restore <file>`** – Discards uncommitted modifications in your working directory for a specific file.
+* **`git restore --staged <file>`** – Unstages a file while preserving its changes in the working directory.
+* **`git revert <commit-id>`** – Creates a new commit that safely undoes changes made by an earlier commit.
+* **`git reset --soft <commit-id>`** – Moves branch pointer back to a prior commit, preserving working directory and staged changes.
+* **`git reset --hard <commit-id>`** – Permanently rewinds repository history and wipes out all uncommitted local changes.
+
+---
+
+### 6. GitHub CLI (`gh`) Commands
+
+* **`gh auth login`** – Authenticates your terminal session directly with your GitHub account.
+* **`gh repo create`** – Interactively creates a new repository directly on GitHub from terminal.
+* **`gh repo fork <owner/repo>`** – Creates a personal copy of another user's repo on GitHub and clones it locally.
+
+
+* **`gh pr create`** – Creates a Pull Request on GitHub directly from your active command line branch.
+* **`gh pr merge`** – Merges an active Pull Request on GitHub directly from terminal.
