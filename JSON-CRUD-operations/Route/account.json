@@ -1,41 +1,17 @@
- {
-    "1465":{
-        "username":"Abhishek",
-        "email":"abhishek@example.com",
-        "password": "123"
-    },
-    "1462":{
-        "username":"John",
-        "email":"john@example.com",
-        "password": "456"
-
-    },
-    "1461":{
-        "username":"Jane",
-        "email":"jane@example.com",
-        "password": "789"
-
-    }
-
- }
-
-const saveAccountData = (data) => {
-    const stringifyData = JSON.stringify(data)
-    fs.writeFileSync(dataPath,stringifyData)
+{
+  "1461": {
+    "username": "Jane",
+    "email": "jane@example.com",
+    "password": "789"
+  },
+  "1462": {
+    "username": "John",
+    "email": "john@example.com",
+    "password": "456"
+  },
+  "1465": {
+    "username": "Abhishek",
+    "email": "abhishek@example.com",
+    "password": "123"
+  }
 }
-
-const getAccountData = () =>{
-    const jsonData = fs.readFileSync(dataPath)
-    return JSON.parse(jsonData)
-}
-
-accountRoutes.post('/account/addaccount',(req,res)=>{
-    var existAccounts = getAccountData()
-    const newAccountId = Math.floor(100000 + Math.random() * 900000)
-    existAccounts[newAccountId] = req.body
-    console.log(existAccounts)
-    saveAccountData(existAccounts)
-    res.send({success:true,msg:'Account data added successfully'});
-
-    })
-
